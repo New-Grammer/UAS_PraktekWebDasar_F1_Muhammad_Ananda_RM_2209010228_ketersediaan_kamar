@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Sistem Manajemen Kamar Rumah Sakit')</title>
+    <title>@yield('title', 'Sistem Ketersediaan Kamar')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #3498db;
-            --secondary-color: #2980b9;
-            --background-color: #030303;
-            --text-color: #729eca;
+            --primary-color: #6b6607;
+            --secondary-color: #adb762;
+            --background-color: #ffffff;
+            --text-color: #010101;
         }
 
         body {
@@ -80,18 +80,13 @@
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 <i class="fas fa-hospital-alt me-2"></i>
-                RS Sehat Sentosa
+                RS Makmuran
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('tipe_kamar.index') }}">
-                            <i class="fas fa-bed me-1"></i> Tipe Kamar
-                        </a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('kamar.index') }}">
                             <i class="fas fa-door-open me-1"></i> Kamar
@@ -105,6 +100,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('reservasi.index') }}">
                             <i class="fas fa-calendar-check me-1"></i> Reservasi
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('tipe_kamar.index') }}">
+                            <i class="fas fa-bed me-1"></i> Tipe Kamar
                         </a>
                     </li>
                 </ul>
@@ -125,7 +125,7 @@
 
     <footer class="footer text-center">
         <div class="container">
-            <span>&copy; 2024 RS Sehat Sentosa. All rights reserved.</span>
+            <span>&copy; 2024 RS Makmuran. All rights reserved.</span>
         </div>
     </footer>
 
